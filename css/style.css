@@ -1,0 +1,14 @@
+:root {
+  /* ### Primary */
+  --pink: hsl(322, 100%, 66%);
+  /* ### Neutral */
+  --very-pale-cyan: hsl(193, 100%, 96%);
+  --very-dark-cyan: hsl(192, 100%, 9%);
+  --grayish-blue: hsl(208, 11%, 55%);
+  /* ### Headings */
+  --font-family: 'Poppins', sans-serif;
+  /* ### Body, Call-to-actions */
+  --font-family: 'Open Sans', sans-serif;
+  --font-weigth-400: 400;
+  --font-weigth-700: 700;
+}
