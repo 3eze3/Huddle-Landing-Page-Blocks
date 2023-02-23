@@ -6,9 +6,59 @@
   --very-dark-cyan: hsl(192, 100%, 9%);
   --grayish-blue: hsl(208, 11%, 55%);
   /* ### Headings */
-  --font-family: 'Poppins', sans-serif;
+  --font-Popins: 'Poppins', sans-serif;
   /* ### Body, Call-to-actions */
-  --font-family: 'Open Sans', sans-serif;
+  --font-Open-Sans: 'Open Sans', sans-serif;
   --font-weigth-400: 400;
   --font-weigth-700: 700;
+}
+
+/*  */
+.hero {
+  outline: solid red 1px;
+  max-width: 90rem;
+  padding: 2.5rem 5rem;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero__logo {
+  max-width: 12.5rem;
+}
+
+.hero__btn {
+  padding: .75rem 4rem;
+  font-family: var(--font-Open-Sans);
+  font-size: .7em;
+  font-weight: var(--font-weigth-700);
+  display: inline-block;
+  background-color: #fff;
+  box-shadow: 0 0.063rem 0.188rem rgb(0 37 46 / 12%), 0 0.063rem 0.125rem rgb(0 37 46 / 24%);
+  border-radius: 1.5rem;
+  -webkit-border-radius: 1.5rem;
+  -moz-border-radius: 1.5rem;
+  -ms-border-radius: 1.5rem;
+  -o-border-radius: 1.5rem;
+}
+
+/* End (Nav/Header) */
+.hero__build {
+  background-color: red;
+  display: flex;
+}
+
+.build__wrapper {
+  outline: solid navy 3px;
+}
+
+.build__title {}
+
+.build__description {}
+
+.build__btnStarted {}
+
+.build__ilustration1 {
+  width: 40%;
 }
