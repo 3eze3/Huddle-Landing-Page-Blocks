@@ -3,7 +3,8 @@
 :root {
   --negro: #393939;
   --font-Barlow-Semi-Condensed: 'Barlow Semi Condensed', sans-serif;
-  --font-size-body: 18px
+  --font-size-body: 18px;
+  --very-pale-cyan: hsl(193, 100%, 96%);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -124,6 +125,7 @@ label {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  -moz-hyphens: auto;
 }
 
 table,
@@ -152,4 +154,6 @@ body {
   font-smooth: always;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url("../images/bg-hero-desktop.svg");
+  background-color: var(--very-pale-cyan);
 }
