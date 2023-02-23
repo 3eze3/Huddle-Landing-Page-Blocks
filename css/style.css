@@ -13,19 +13,19 @@
   --font-weigth-700: 700;
 }
 
-/*  */
 .hero {
-  outline: solid red 1px;
   max-width: 90rem;
   padding: 2.5rem 5rem;
   margin-inline: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  outline: solid red 1px;
 }
 
 .hero__logo {
   max-width: 12.5rem;
+  outline: solid black 1px;
 }
 
 .hero__btn {
@@ -44,21 +44,48 @@
 }
 
 /* End (Nav/Header) */
-.hero__build {
-  background-color: red;
+.main {
+  max-width: 90rem;
+  margin-inline: auto;
+  margin-top: 1.5rem;
+  outline: solid red 1px;
+}
+
+.main__build {
+  margin-inline: 5.018rem;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.1rem;
+  outline: solid green 1px;
 }
 
 .build__wrapper {
-  outline: solid navy 3px;
+  outline: black 1px solid;
+  flex: 42%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3rem;
 }
 
-.build__title {}
+.build__title {
+  color: var(--very-dark-cyan);
+  font-family: var(--font-Popins);
+  font-size: 2em;
+  word-wrap: break-word;
+  line-height: 1.5;
+  text-align: left;
+}
 
 .build__description {}
 
-.build__btnStarted {}
+.build__btn {}
 
 .build__ilustration1 {
-  width: 40%;
+  outline: green 1px solid;
+  flex: 55%;
 }
+
+/* .main__section--community {} */
