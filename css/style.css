@@ -129,23 +129,34 @@
   box-shadow: 0 0.063rem 0.188rem rgb(0 37 46 / 12%), 0 0.063rem 0.125rem rgb(0 37 46 / 24%);
 }
 
+.services__card:nth-of-type(even) {
+  flex-direction: row-reverse;
+  padding-left: 6.25rem;
+}
+
+.services__card:nth-of-type(even)>.card__content {
+  flex: 49%;
+  padding: 0 0rem 0 5.4rem;
+}
+
 .card__content {
   flex: 62%;
   padding: 0 8rem 0 5rem;
 }
+
 
 .card__title {
   font-family: var(--font-Popins);
   font-size: 1.35em;
   font-weight: var(--font-weigth-700);
   color: var(--very-dark-cyan);
-  margin-bottom: .95rem;
+  margin-bottom: 1.1rem;
 }
 
 .card__description {
   font-family: var(--font-Open-Sans);
   font-size: .9em;
-  line-height: 1.3;
+  line-height: 1.4;
   color: var(--grayish-blue);
 }
 
