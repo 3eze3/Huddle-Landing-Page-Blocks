@@ -103,15 +103,20 @@
 
 /* Services */
 .main__services {
-  background-color: #fff;
-  padding: 10rem 6.5rem;
+  padding: 10rem 6.5rem 17.25rem 6.5rem;
   margin-top: 3.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
   position: relative;
 }
 
 .services__title {
   text-align: center;
   display: none;
+  /* ---------------------------------------------------------------------------- Acabar con el titulo puto  */
 }
 
 .services__card {
@@ -167,11 +172,34 @@
 
 /* Carta especial  */
 .services__community {
-  outline: solid red 1px;
+  width: 50rem;
+  min-height: 17.5rem;
+  /*outline: solid red 1px;
+  */
   position: absolute;
-  margin: 0 auto;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3.5rem;
+  background-color: #fff;
+  box-shadow: 0 0.063rem 0.588rem rgb(0 37 46 / 12%), 0 0.063rem 0.125rem rgb(0 37 46 / 24%);
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
 }
 
-.community__title {}
+.community__title {
+  font-family: var(--font-Popins);
+  font-size: 1.55em;
+  color: var(--very-dark-cyan);
+}
 
-.community__btn {}
+.community__btn {
+  outline: solid red 1px;
+  background-color: var(--pink);
+  cursor: pointer;
+}
