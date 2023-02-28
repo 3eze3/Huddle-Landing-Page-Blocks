@@ -24,6 +24,9 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
       rel="stylesheet" />
     <!--  -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v6.2.0/css/all.css" />
     <link rel="stylesheet" href="resetCss/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -48,7 +51,7 @@
         </div>
       </section>
       <section class="main__services services">
-        <h2 class="services__title">List of Hubble Company features</h2>
+        <!-- <h2 class="title__hidden">List of Hubble Company features</h2> -->
         <article class="services__card card">
           <div class="card__content">
             <h2 class="card__title">Grow Together</h2>
@@ -100,14 +103,15 @@
         </div>
       </section>
     </main>
+    <!-- Footer -->
     <footer class="footer">
-      <div class="footer__logo">
-        <img src="images/logo.svg" alt="Logo Hubble" />
-      </div>
-      <section class="footer__wraper">
-        <!-- <h3></h3> -->
+      <section class="footer__wrapper">
+        <!-- <h3 class="title__hidden"></h3> -->
         <section class="footer__contact contact">
-          <!-- <h3></h3> -->
+          <!-- <h3 class="title__hidden"></h3> -->
+          <div class="contact__logo">
+            <img src="images/logo.svg" alt="Logo Hubble" />
+          </div>
           <address class="contact__wrapper">
             <p class="contact__location">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -117,7 +121,7 @@
             <a href="#" class="contact__link"> example@huddle.com </a>
           </address>
         </section>
-        <nav class="footer__navbar">
+        <nav class="footer__navbar navbar">
           <ul class="navbar__list">
             <li class="navbar__item">
               <a href="#" class="navbar__link">About Us</a>
@@ -140,11 +144,23 @@
           </ul>
         </nav>
         <section class="footer__social social">
-          <!-- <h3></h3> -->
+          <!-- <h3 class="title__hidden"></h3> -->
           <ul class="social__list">
-            <li class="social__item"><a class="social__link" href="#"></a></li>
-            <li class="social__item"><a class="social__link" href="#"></a></li>
-            <li class="social__item"><a class="social__link" href="#"></a></li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <i class="fa-brands fa-twitter"></i
+              ></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
           </ul>
         </section>
       </section>
