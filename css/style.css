@@ -20,7 +20,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  outline: solid red 1px;
 }
 
 .hero__logo {
@@ -47,7 +46,6 @@
   max-width: 90rem;
   margin-inline: auto;
   margin-top: 1.5rem;
-  outline: solid red 1px;
 }
 
 .main__build {
@@ -103,7 +101,7 @@
 
 /* Services */
 .main__services {
-  padding: 10rem 6.5rem 17.25rem 6.5rem;
+  padding: 10rem 6.5rem 19rem 6.5rem;
   margin-top: 3.75rem;
   display: flex;
   flex-direction: column;
@@ -113,11 +111,12 @@
   position: relative;
 }
 
-.services__title {
+/* ---------------------------------------------------------------------------- Acabar con el titulo puto  */
+.title__hidden {
   text-align: center;
   display: none;
-  /* ---------------------------------------------------------------------------- Acabar con el titulo puto  */
 }
+
 
 .services__card {
   min-height: 27.5rem;
@@ -174,9 +173,9 @@
 .services__community {
   width: 50rem;
   min-height: 17.5rem;
-  padding-top: 2.9rem;
+  padding-top: 2.5rem;
   position: absolute;
-  bottom: 0;
+  bottom: -5.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -209,4 +208,83 @@
   -moz-border-radius: 3rem;
   -ms-border-radius: 3rem;
   -o-border-radius: 3rem;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--very-dark-cyan);
+  padding-top: 16rem;
+  padding-bottom: 4rem;
+}
+
+.footer__wrapper {
+  max-width: 75.375rem;
+  margin-top: 1rem;
+  display: flex;
+  gap: 2rem;
+  margin-inline: auto;
+  color: #fff;
+  outline: solid red 1px;
+}
+
+.footer__contact {
+  outline: green 1px solid;
+  flex: 40%;
+}
+
+.contact__logo {
+  width: 17rem;
+  filter: brightness(0) invert(100%);
+  -webkit-filter: brightness(0) invert(100%);
+  margin-bottom: 2rem;
+}
+
+.contact__wrapper {
+  outline: solid red 1px;
+  font-style: normal;
+  font-size: .8em;
+}
+
+.contact__location {
+  padding-right: 9.6rem;
+  word-break: break-all;
+  line-height: 1.5;
+}
+
+.contact__link {}
+
+.footer__navbar {
+  flex: 30%;
+  outline: solid red 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: .5rem;
+}
+
+.navbar__list {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  /* align-content: center; */
+  align-items: center;
+  /* align-content: center; */
+  outline: solid red 1px;
+}
+
+.navbar__link {
+  font-size: 1em;
+}
+
+.footer__social {
+  flex: 30%;
+}
+
+.social__list {}
+
+.social__item {
+  outline: green 1px solid;
+}
+
+.social__link {
+  display: block;
 }
