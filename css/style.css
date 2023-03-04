@@ -210,81 +210,178 @@
   -o-border-radius: 3rem;
 }
 
-/* Footer */
 .footer {
   background-color: var(--very-dark-cyan);
-  padding-top: 16rem;
+  padding-top: 13rem;
   padding-bottom: 4rem;
+  color: #fff;
 }
 
 .footer__wrapper {
   max-width: 75.375rem;
-  margin-top: 1rem;
-  display: flex;
-  gap: 2rem;
   margin-inline: auto;
-  color: #fff;
-  outline: solid red 1px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2.5rem;
 }
 
 .footer__contact {
-  outline: green 1px solid;
   flex: 40%;
+  padding-right: 5.9rem;
 }
+
 
 .contact__logo {
   width: 17rem;
+  margin-left: 10.5rem;
   filter: brightness(0) invert(100%);
   -webkit-filter: brightness(0) invert(100%);
   margin-bottom: 2rem;
 }
 
-.contact__wrapper {
-  outline: solid red 1px;
-  font-style: normal;
+.contact__wrapper>* {
+  margin-bottom: 1.6rem;
   font-size: .8em;
+  font-style: normal;
+  font-family: var(--font-Open-Sans);
+
 }
 
-.contact__location {
-  padding-right: 9.6rem;
-  word-break: break-all;
+.contact__content--location {
   line-height: 1.5;
 }
 
-.contact__link {}
+.contact__content {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.contact__content--location::before {
+  content: url("../images/icon-location.svg");
+}
+
+.contact__content--phone::before {
+  content: url("../images/icon-phone.svg");
+}
+
+.contact__content--email::before {
+  content: url("../images/icon-email.svg");
+}
+
+.contact__link::before {
+  content: url("../images/icon-location.svg");
+}
+
+.contact__content--location~.contact__content:hover {
+  color: var(--pink);
+  transition: .2s ease-in-out;
+  -webkit-transition: .2s ease-in-out;
+  -moz-transition: .2s ease-in-out;
+  -ms-transition: .2s ease-in-out;
+  -o-transition: .2s ease-in-out;
+
+}
 
 .footer__navbar {
   flex: 30%;
-  outline: solid red 1px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: .5rem;
 }
 
 .navbar__list {
   display: grid;
   grid-template-columns: repeat(2, 50%);
-  /* align-content: center; */
-  align-items: center;
-  /* align-content: center; */
-  outline: solid red 1px;
+  gap: .6rem 4rem;
+  font-size: .95em;
+  font-family: var(--font-Open-Sans);
 }
 
 .navbar__link {
-  font-size: 1em;
+  display: inline;
+}
+
+.navbar__link {
+  color: #fff;
+  transition: .15s ease-in;
+  -webkit-transition: .15s ease-in;
+  -moz-transition: .15s ease-in;
+  -ms-transition: .15s ease-in;
+  -o-transition: .15s ease-in;
+}
+
+.navbar__link:hover {
+  color: var(--pink);
+  transition: .2s ease-out;
+  -webkit-transition: .2s ease-out;
+  -moz-transition: .2s ease-out;
+  -ms-transition: .2s ease-out;
+  -o-transition: .2s ease-out;
 }
 
 .footer__social {
   flex: 30%;
 }
 
-.social__list {}
-
-.social__item {
-  outline: green 1px solid;
+.social__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 }
 
 .social__link {
-  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 1rem;
+  outline: #fff 1px solid;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: .2s ease-in-out;
+  -webkit-transition: .2s ease-in-out;
+  -moz-transition: .2s ease-in-out;
+  -ms-transition: .2s ease-in-out;
+  -o-transition: .2s ease-in-out;
+}
+
+.fa-brands {
+  font-size: 1rem;
+  filter: brightness(1);
+  -webkit-filter: brightness(1);
+  transition: .25s ease-out;
+  -webkit-transition: .25s ease-out;
+  -moz-transition: .25s ease-out;
+  -ms-transition: .25s ease-out;
+  -o-transition: .25s ease-out;
+}
+
+.social__link:hover {
+  outline: none;
+  background-color: var(--pink);
+  transform: scale(1.2) translateY(-3px);
+  -webkit-transform: scale(1.2) translateY(-3px);
+  -moz-transform: scale(1.2) translateY(-3px);
+  -ms-transform: scale(1.2) translateY(-3px);
+  -o-transform: scale(1.2) translateY(-3px);
+  transition: .2s ease-in-out;
+  -webkit-transition: .2s ease-in-out;
+  -moz-transition: .2s ease-in-out;
+  -ms-transition: .2s ease-in-out;
+  -o-transition: .2s ease-in-out;
+}
+
+.social__link:hover>.fa-brands {
+  filter: brightness(0);
+  -webkit-filter: brightness(0);
+  transition: .2s ease-in;
+  -webkit-transition: .2s ease-in;
+  -moz-transition: .2s ease-in;
+  -ms-transition: .2s ease-in;
+  -o-transition: .2s ease-in;
 }
