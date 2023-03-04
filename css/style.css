@@ -41,7 +41,6 @@
   -o-border-radius: 1.5rem;
 }
 
-/* End (Nav/Header) */
 .main {
   max-width: 90rem;
   margin-inline: auto;
@@ -54,6 +53,14 @@
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
+  position: relative;
+}
+
+.title__hidden {
+  visibility: hidden;
+  position: absolute;
+  top: 5rem;
+  left: 42%;
 }
 
 .build__wrapper {
@@ -99,7 +106,6 @@
   flex: 55%;
 }
 
-/* Services */
 .main__services {
   padding: 10rem 6.5rem 19rem 6.5rem;
   margin-top: 3.75rem;
@@ -110,13 +116,6 @@
   background-color: #fff;
   position: relative;
 }
-
-/* ---------------------------------------------------------------------------- Acabar con el titulo puto  */
-.title__hidden {
-  text-align: center;
-  display: none;
-}
-
 
 .services__card {
   min-height: 27.5rem;
@@ -224,6 +223,7 @@
   justify-content: center;
   align-items: flex-start;
   gap: 2.5rem;
+  position: relative;
 }
 
 .footer__contact {
@@ -355,10 +355,10 @@
   filter: brightness(1);
   -webkit-filter: brightness(1);
   transition: .25s ease-out;
-  -webkit-transition: .25s ease-out;
-  -moz-transition: .25s ease-out;
-  -ms-transition: .25s ease-out;
-  -o-transition: .25s ease-out;
+  -webkit-transition: .2s ease-out;
+  -moz-transition: .2s ease-out;
+  -ms-transition: .2s ease-out;
+  -o-transition: .2s ease-out;
 }
 
 .social__link:hover {
