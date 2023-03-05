@@ -142,7 +142,7 @@ svg {
 }
 
 body {
-  min-height: 100vh;
+  height: 100%;
   font-size: var(--font-size-body);
   font-family: var(--font-Barlow-Semi-Condensed);
   font-weight: var(--weigth-400);
@@ -156,4 +156,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-image: url("../images/bg-hero-desktop.svg");
   background-color: var(--very-pale-cyan);
+}
+
+@media screen and (max-width:865px) {
+  body {
+    background-image: url("../images/bg-hero-mobile.svg");
+  }
 }
