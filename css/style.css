@@ -191,7 +191,7 @@
   font-family: var(--font-Open-Sans);
   font-size: .9em;
   line-height: 1.4;
-  color: var(--grayish-blue);
+  color: var(--very-dark-cyan);
 }
 
 .card__ilustration {
@@ -255,7 +255,7 @@
 
 .footer {
   background-color: var(--very-dark-cyan);
-  padding-top: 13rem;
+  padding-top: 10rem;
   padding-bottom: 4rem;
   color: #fff;
 }
@@ -434,7 +434,6 @@
 @media screen and (max-width:860px) {
 
   .hero {
-    min-width: 100%;
     padding: 1.3rem 1.35rem;
   }
 
@@ -476,15 +475,84 @@
     width: 90%;
   }
 
-  . {}
+  .main__services {
+    padding: 2rem 1.25rem 15rem 1.25rem;
+  }
 
-  . {}
+  .services__card {
+    flex-direction: column;
+    padding: 1.9rem;
+  }
 
-  . {}
+  .services__card:nth-of-type(even) {
+    flex-direction: column;
+    padding: 1.9rem;
+  }
 
-  . {}
+  .services__card:nth-of-type(even)>.card__content {
+    flex: 49%;
+    padding: .1rem;
+  }
 
-  . {}
+  .card__content {
+    text-align: center;
+    padding: .1rem;
+    width: 100%;
+  }
 
-  . {}
+  .card__title {
+    line-height: 1.5;
+    margin-bottom: 1.35rem;
+    font-size: 1.5em;
+  }
+
+  .card__description {
+    font-size: .85em;
+  }
+
+  .card__ilustration {
+    order: -1;
+  }
+
+  .services__community {
+    width: 22rem;
+    min-height: 16rem;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .community__title {
+    font-size: 1.1em;
+  }
+
+  .community__btn {
+    padding: 1.1rem 3rem;
+    font-size: .7em;
+  }
+
+  .footer {
+    padding-inline: 1.75rem;
+  }
+
+  .footer__wrapper {
+    flex-direction: column;
+  }
+
+  .footer__contact {
+    padding-right: .5rem;
+  }
+
+  .contact__logo {
+    margin-left: 0;
+  }
+
+  .navbar__list {
+    font-size: .85em;
+    grid-template-columns: 1fr;
+    row-gap: .8rem;
+  }
+
+  .footer__social {
+    align-self: center;
+  }
 }
